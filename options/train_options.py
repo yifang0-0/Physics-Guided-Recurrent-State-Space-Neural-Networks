@@ -11,22 +11,22 @@ def get_train_options(dataset_name):
     train_parser.add_argument('--test_every', type=int, default=5, help='validate every N epochs')
 
     if dataset_name == 'cascaded_tank':
-        train_parser.add_argument('--n_epochs', type=int, default=200, help='number of training epochs')
-        train_parser.add_argument('--init_lr', type=float, default=1e-3, help='initial learning rate')
+        train_parser.add_argument('--n_epochs', '--n_epoch', type=int, default=200, help='number of training epochs')
+        train_parser.add_argument('--init_lr', '--init_nr', type=float, default=1e-3, help='initial learning rate')
         train_parser.add_argument('--min_lr', type=float, default=1e-9, help='minimum learning rate')
         train_parser.add_argument('--lr_scheduler_nepochs', type=float, default=10, help='lr scheduler check interval')
         train_parser.add_argument('--lr_scheduler_factor', type=float, default=10, help='lr scheduler reduction factor')
 
     elif dataset_name == 'toy_lgssm_5_pre':
-        train_parser.add_argument('--n_epochs', type=int, default=750, help='number of training epochs')
-        train_parser.add_argument('--init_lr', type=float, default=1e-3, help='initial learning rate')
+        train_parser.add_argument('--n_epochs', '--n_epoch', type=int, default=750, help='number of training epochs')
+        train_parser.add_argument('--init_lr', '--init_nr', type=float, default=1e-3, help='initial learning rate')
         train_parser.add_argument('--min_lr', type=float, default=1e-7, help='minimum learning rate')
         train_parser.add_argument('--lr_scheduler_nepochs', type=float, default=30, help='lr scheduler check interval')
         train_parser.add_argument('--lr_scheduler_factor', type=float, default=5, help='lr scheduler reduction factor')
 
     elif dataset_name == 'industrobo':
-        train_parser.add_argument('--n_epochs', type=int, default=1000, help='number of training epochs')
-        train_parser.add_argument('--init_lr', type=float, default=1e-3, help='initial learning rate')
+        train_parser.add_argument('--n_epochs', '--n_epoch', type=int, default=1000, help='number of training epochs')
+        train_parser.add_argument('--init_lr', '--init_nr', type=float, default=1e-3, help='initial learning rate')
         train_parser.add_argument('--min_lr', type=float, default=1e-7, help='minimum learning rate')
         train_parser.add_argument('--lr_scheduler_nepochs', type=float, default=20, help='lr scheduler check interval')
         train_parser.add_argument('--lr_scheduler_factor', type=float, default=10, help='lr scheduler reduction factor')
