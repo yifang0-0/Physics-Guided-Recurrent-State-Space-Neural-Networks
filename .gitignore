@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# PyTorch / model checkpoints
+*.pt
+*.pth
+*.pkl
+*.ckpt
+
+# Logs and outputs
+log/
+nohup.out
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+.env
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Cascaded Tanks data — loaded via: pip install nonlinear-benchmarks
+data/cascadedTank/
+data/CascadedTank/
+
+# Real robot measurements — not redistributable
+data/IndustRobo/forward_identification_without_raw_data*.mat
