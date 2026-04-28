@@ -38,6 +38,3 @@ Thumbs.db
 # Cascaded Tanks data — loaded via: pip install nonlinear-benchmarks
 data/cascadedTank/
 data/CascadedTank/
-
-# Real robot measurements — not redistributable
-data/IndustRobo/forward_identification_without_raw_data*.mat

@@ -193,12 +193,12 @@ def get_model_options(model_type, dataset_name, dataset_options):
     model_parser.add_argument('--x_nn_w', type=float, default=1)
 
     if dataset_name == 'cascaded_tank':
-        model_parser.add_argument('--h_dim', type=int, default=60)
+        model_parser.add_argument('--h_dim', type=int, default=16)
         model_parser.add_argument('--z_dim', type=int, default=2)
         model_parser.add_argument('--n_layers', type=int, default=1)
 
     elif dataset_name == 'toy_lgssm_5_pre':
-        model_parser.add_argument('--h_dim', type=int, default=10)
+        model_parser.add_argument('--h_dim', type=int, default=16)
         model_parser.add_argument('--z_dim', type=int, default=2)
         model_parser.add_argument('--n_layers', type=int, default=1)
 
