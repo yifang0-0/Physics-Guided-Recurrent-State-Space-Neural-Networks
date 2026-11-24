@@ -2,6 +2,10 @@
 
 IFAC World Congress 2026 — Submission #1679
 
+[![arXiv](https://img.shields.io/badge/arXiv-2606.02278-b31b1b.svg)](https://arxiv.org/abs/2606.02278)
+
+**Preprint:** [arXiv:2606.02278](https://arxiv.org/abs/2606.02278)
+
 This repository contains the code to reproduce all results in the paper.
 Each experiment section below lists the exact commands used to generate the paper's results,
 with logdir names matching the original run structure.
